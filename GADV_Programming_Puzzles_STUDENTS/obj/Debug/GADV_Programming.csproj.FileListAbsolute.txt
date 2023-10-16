@@ -1,0 +1,40 @@
+E:\ACADEMIC\_2023_24\GADV\Teaching materials\Programming\GADV_Programming\GADV_Programming\bin\Debug\GADV_Programming.exe.config
+E:\ACADEMIC\_2023_24\GADV\Teaching materials\Programming\GADV_Programming\GADV_Programming\bin\Debug\GADV_Programming.exe
+E:\ACADEMIC\_2023_24\GADV\Teaching materials\Programming\GADV_Programming\GADV_Programming\bin\Debug\GADV_Programming.pdb
+E:\ACADEMIC\_2023_24\GADV\Teaching materials\Programming\GADV_Programming\GADV_Programming\obj\Debug\GADV_Programming.csproj.AssemblyReference.cache
+E:\ACADEMIC\_2023_24\GADV\Teaching materials\Programming\GADV_Programming\GADV_Programming\obj\Debug\GADV_Programming.csproj.SuggestedBindingRedirects.cache
+E:\ACADEMIC\_2023_24\GADV\Teaching materials\Programming\GADV_Programming\GADV_Programming\obj\Debug\GADV_Programming.csproj.CoreCompileInputs.cache
+E:\ACADEMIC\_2023_24\GADV\Teaching materials\Programming\GADV_Programming\GADV_Programming\obj\Debug\GADV_Programming.exe
+E:\ACADEMIC\_2023_24\GADV\Teaching materials\Programming\GADV_Programming\GADV_Programming\obj\Debug\GADV_Programming.pdb
+E:\ACADEMIC\_2023_24\GADV\Unity project materials\Week 02\GADV_Programming_Puzzles\bin\Debug\GADV_Programming.exe.config
+E:\ACADEMIC\_2023_24\GADV\Unity project materials\Week 02\GADV_Programming_Puzzles\bin\Debug\GADV_Programming.exe
+E:\ACADEMIC\_2023_24\GADV\Unity project materials\Week 02\GADV_Programming_Puzzles\bin\Debug\GADV_Programming.pdb
+E:\ACADEMIC\_2023_24\GADV\Unity project materials\Week 02\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.csproj.AssemblyReference.cache
+E:\ACADEMIC\_2023_24\GADV\Unity project materials\Week 02\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.csproj.SuggestedBindingRedirects.cache
+E:\ACADEMIC\_2023_24\GADV\Unity project materials\Week 02\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.csproj.CoreCompileInputs.cache
+E:\ACADEMIC\_2023_24\GADV\Unity project materials\Week 02\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.exe
+E:\ACADEMIC\_2023_24\GADV\Unity project materials\Week 02\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.pdb
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles\bin\Debug\GADV_Programming.exe.config
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles\bin\Debug\GADV_Programming.exe
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles\bin\Debug\GADV_Programming.pdb
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.csproj.AssemblyReference.cache
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.csproj.SuggestedBindingRedirects.cache
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.csproj.CoreCompileInputs.cache
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.exe
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles\obj\Debug\GADV_Programming.pdb
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles_STUDENTS\bin\Debug\GADV_Programming.exe.config
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles_STUDENTS\bin\Debug\GADV_Programming.exe
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles_STUDENTS\bin\Debug\GADV_Programming.pdb
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.csproj.AssemblyReference.cache
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.csproj.SuggestedBindingRedirects.cache
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.csproj.CoreCompileInputs.cache
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.exe
+D:\OneDrive_TP\OneDrive - Temasek Polytechnic\_2023_04\April\GADV\Teaching materials\Programming\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.pdb
+C:\Users\User\Desktop\Game Making\GADV_Programming_Puzzles_STUDENTS\bin\Debug\GADV_Programming.exe.config
+C:\Users\User\Desktop\Game Making\GADV_Programming_Puzzles_STUDENTS\bin\Debug\GADV_Programming.exe
+C:\Users\User\Desktop\Game Making\GADV_Programming_Puzzles_STUDENTS\bin\Debug\GADV_Programming.pdb
+C:\Users\User\Desktop\Game Making\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Game Making\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\Game Making\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Game Making\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.exe
+C:\Users\User\Desktop\Game Making\GADV_Programming_Puzzles_STUDENTS\obj\Debug\GADV_Programming.pdb
