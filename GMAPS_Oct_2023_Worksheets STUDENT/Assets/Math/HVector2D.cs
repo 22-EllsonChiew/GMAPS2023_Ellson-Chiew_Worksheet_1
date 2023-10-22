@@ -70,6 +70,12 @@ public class HVector2D
 
      public HVector2D Projection(HVector2D other)
      {
+        /*float dot = DotProduct(other);
+        float vec = other.Magnitude() * other.Magnitude();
+        float scalar = dot / vec;
+        return other * scalar;*/
+
+
         float dot = DotProduct(other);
         float vec= other.Magnitude() * other.Magnitude();
         return other * (dot / vec);

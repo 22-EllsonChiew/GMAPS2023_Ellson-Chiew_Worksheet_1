@@ -87,7 +87,7 @@ public class VectorExercises : MonoBehaviour
             endPt = new Vector3(
                 Random.Range(-10, 10),
                 Random.Range(-5, 5),
-                Random.Range(-5, 5));
+                Random.Range(-5, 0));
 
 
             DebugExtension.DebugArrow(new Vector3(0, 0, 0), endPt, Color.white, 60f);
@@ -144,11 +144,12 @@ public class VectorExercises : MonoBehaviour
         HVector2D c = new HVector2D(2, 2);
 
         HVector2D v1 = b - a;
-        // Your code here
+        
 
         HVector2D proj = c.Projection(v1);
+        
 
-        DebugExtension.DebugArrow(a.ToUnityVector3(), b.ToUnityVector3(), Color.red, 60f);
+        DebugExtension.DebugArrow(a.ToUnityVector3(), v1.ToUnityVector3(), Color.red, 60f);
         DebugExtension.DebugArrow(a.ToUnityVector3(), c.ToUnityVector3(), Color.yellow, 60f);
         DebugExtension.DebugArrow(a.ToUnityVector3(), proj.ToUnityVector3(), Color.white, 60f);
     }
