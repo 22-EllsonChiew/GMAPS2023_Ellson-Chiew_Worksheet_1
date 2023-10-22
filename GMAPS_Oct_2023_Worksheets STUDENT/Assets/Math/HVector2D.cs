@@ -52,15 +52,15 @@ public class HVector2D
 
     public float Magnitude()
     {
-        return Mathf.Sqrt(x * x + y * y);
+        return (float)Mathf.Sqrt(x * x + y * y);
 
     }
 
      public void Normalize()
      {
-        float n = Magnitude();
-        x /= n;
-        y /= n;
+        float mag = Magnitude();
+        x /= mag;
+        y /= mag;
      }
 
      public float DotProduct(HVector2D other)
