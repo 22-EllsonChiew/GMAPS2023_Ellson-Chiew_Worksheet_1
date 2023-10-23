@@ -75,10 +75,12 @@ public class HVector2D
         float scalar = dot / vec;
         return other * scalar;*/
 
-
-        float dot = DotProduct(other);
-        float vec= other.Magnitude() * other.Magnitude();
-        return other * (dot / vec);
+        float dot = this.DotProduct(other);
+        float vecMag = other.Magnitude();
+        float proj = dot / other.DotProduct(other);
+        return other * proj;
+        //float scalar = dot / (vecMag * vecMag);     
+        //return other * scalar;
      }
 
     // public float FindAngle(/*???*/)

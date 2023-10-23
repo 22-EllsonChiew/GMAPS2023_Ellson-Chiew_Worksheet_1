@@ -8,8 +8,8 @@ public class VectorExercises : MonoBehaviour
 
     private Line drawnLine;
 
-    private Vector2 startPt;
-    private Vector2 endPt;
+    private Vector3 startPt;
+    private Vector3 endPt;
 
     public float GameWidth, GameHeight;
     private float minX, minY, maxX, maxY;
@@ -146,8 +146,8 @@ public class VectorExercises : MonoBehaviour
         HVector2D v1 = b - a;
         
 
-        HVector2D proj = c.Projection(v1);
-        
+        HVector2D proj = c.Projection(b);
+        Debug.Log(proj.ToUnityVector3());
 
         DebugExtension.DebugArrow(a.ToUnityVector3(), v1.ToUnityVector3(), Color.red, 60f);
         DebugExtension.DebugArrow(a.ToUnityVector3(), c.ToUnityVector3(), Color.yellow, 60f);

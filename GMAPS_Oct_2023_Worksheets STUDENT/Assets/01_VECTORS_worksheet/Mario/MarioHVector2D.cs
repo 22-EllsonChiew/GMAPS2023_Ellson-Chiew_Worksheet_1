@@ -7,6 +7,7 @@ public class MarioHVector2D : MonoBehaviour
     public Transform planet;
     public float force = 5f;
     public float gravityStrength = 5f;
+    public float speed = 3f;
 
     private HVector2D gravityDir, gravityNorm;
     private HVector2D moveDir;
@@ -14,7 +15,7 @@ public class MarioHVector2D : MonoBehaviour
 
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
@@ -22,7 +23,19 @@ public class MarioHVector2D : MonoBehaviour
         gravityDir = new HVector2D(planet.position - transform.position);  
         moveDir = new HVector2D(gravityDir.y, -gravityDir.x);
 
-        // Your code here
-        // ...
+        /*moveDir.Normalize();
+        
+        rb.AddForce(moveDir.Normalize() * speed);
+
+        gravityNorm = gravityDir.normalized;
+        rb.AddForce(gravityNorm * gravityStrength);
+
+        float angle = Vector3.SignedAngle(Vector3.right, moveDir, Vector3.forward);
+
+        rb.MoveRotation(Quaternion.Euler(0, 0, angle));
+
+        DebugExtension.DebugArrow(transform.position, gravityDir, Color.red);
+
+        DebugExtension.DebugArrow(transform.position, moveDir, Color.blue);*/
     }
 }
