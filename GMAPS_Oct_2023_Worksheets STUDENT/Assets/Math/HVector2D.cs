@@ -83,10 +83,18 @@ public class HVector2D
         //return other * scalar;
      }
 
-    // public float FindAngle(/*???*/)
-    // {
-
-    // }
+     public float FindAngle(HVector2D other)
+     {
+        
+        float angle = Mathf.Acos(DotProduct(other) / (Magnitude() * other.Magnitude())); 
+        
+        //if x less then 0 it makes the angle on the right side and make it negative on the correct side
+        if(x < 0)
+        {
+            angle = -angle;
+        }
+        return angle;
+     }
 
     public Vector2 ToUnityVector2()
     {
