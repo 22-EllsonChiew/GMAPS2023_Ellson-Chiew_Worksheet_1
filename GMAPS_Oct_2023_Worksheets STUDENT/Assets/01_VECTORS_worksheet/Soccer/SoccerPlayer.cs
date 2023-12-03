@@ -46,19 +46,20 @@ public class SoccerPlayer : MonoBehaviour
         return Vector3.Dot(vectorA, vectorB);
     }
 
-    /*SoccerPlayer FindClosestPlayerDot()
+    SoccerPlayer FindClosestPlayerDot()
     {
         SoccerPlayer closest = null;
         float minAngle = 180f;
 
         for(int i = 0; i < OtherPlayers.Length; i++)
         {
-            Vector3 toPlayer = transform.position;
+            //find the position other player in the index
+            Vector3 toPlayer = OtherPlayers[i].transform.position - transform.position;
             toPlayer = Normalise(toPlayer);
 
             float angle = Mathf.Acos(i);
 
-            float dot = Dot(vectorA, vectorB);
+            float dot = Dot(transform.forward, toPlayer);
 
             angle = angle * minAngle;
 
@@ -70,7 +71,7 @@ public class SoccerPlayer : MonoBehaviour
         }
 
         return closest;
-    }*/
+    }
 
     void DrawVectors()
     {
@@ -94,12 +95,28 @@ public class SoccerPlayer : MonoBehaviour
 
          if(IsCaptain)
          {
+            angle += Input.GetAxis("Horizontal") * rotationSpeed;
+            transform.localRotation = Quaternion.AngleAxis(angle, Vector3.up);
+            Debug.DrawRay(transform.position, transform.forward * 10f, Color.red);
+
+            DrawVectors();
+
+            SoccerPlayer targetPlayer = FindClosestPlayerDot();
+            targetPlayer.GetComponent<Renderer>().material.color = Color.green;
+
+            foreach(SoccerPlayer other in OtherPlayers.Where(t => t != targetPlayer))
+            {
+                other.GetComponent<Renderer>().material.color = Color.white;
+            }
+
+
+
              //angle += Input.GetAxis("Horizontal") * rotationSpeed;
              //transform.localRotation = Quaternion.AngleAxis(angle, Vector3.up);
              //Debug.DrawRay(transform.position, transform.forward * 10f, Color.red);
          }
 
-        DrawVectors();
+        //DrawVectors();
     }
 
 }
