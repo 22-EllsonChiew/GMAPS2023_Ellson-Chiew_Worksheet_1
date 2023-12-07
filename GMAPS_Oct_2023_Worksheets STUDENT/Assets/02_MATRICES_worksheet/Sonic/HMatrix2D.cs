@@ -75,11 +75,13 @@ public class HMatrix2D : MonoBehaviour
 
         float[,] resultMatrix = new float[left.Rows, left.Columns];
 
+        //loop over the left.rows of the maxtrix then loop variabe i 
         for (int i = 0; i < left.Rows; i++)
         {
+            // loop over the left.columns of the maxtrix then loop variabe j
             for (int j = 0; j < left.Columns; j++)
             {
-                //add elements from the two matrix and store them in the result Matrix
+                //add elements from the two matrix and store them in the result Matrix while using minus operator corresponding to rows and columns indices from left and right entriess 
                 resultMatrix[i, j] = left.entries[i, j] - right.entries[i, j];
             }
         }
@@ -97,7 +99,7 @@ public class HMatrix2D : MonoBehaviour
         {
             for (int j = 0; j < left.Columns; j++)
             {
-                //add elements from the two matrix and store them in the result Matrix
+                //add elements and uses left matrix entires and the varables values and minus the scalar value 
                 resultMatrix[i, j] = left.entries[i, j] - scalar;
             }
         }
@@ -112,6 +114,7 @@ public class HMatrix2D : MonoBehaviour
 
         return new HVector2D
         (
+            //calculaes the x axis of the HMatrix2D and add the left element of the entires and multiply the right y axis and add left entires element multiple by right.h which is the y axis with 0 value back in HVector2D
             left.entries[0, 0] * right.x + left.entries[0, 1] * right.y + left.entries[0, 2] * right.h,
             left.entries[1, 0] * right.x + left.entries[1, 1] * right.y + left.entries[1, 2] * right.h
 
@@ -126,6 +129,7 @@ public class HMatrix2D : MonoBehaviour
        return new HMatrix2D
        (
 
+       //use matrix multiplication, each element of the resulting matrix is the calculated by using dot product corresponding row from left matrix and column to right matrix and repeat the same for all 
        left.entries[0, 0] * right.entries[0, 0] + left.entries[0, 1] * right.entries[1, 0] + left.entries[0, 2] * right.entries[2, 0],
        left.entries[0, 0] * right.entries[0, 1] + left.entries[0, 1] * right.entries[1, 1] + left.entries[0, 2] * right.entries[2, 1],
        left.entries[0, 0] * right.entries[0, 2] + left.entries[0, 1] * right.entries[1, 2] + left.entries[0, 2] * right.entries[2, 2],
@@ -137,10 +141,6 @@ public class HMatrix2D : MonoBehaviour
        left.entries[2, 0] * right.entries[0, 0] + left.entries[2, 1] * right.entries[1, 0] + left.entries[2, 2] * right.entries[2, 0],
        left.entries[2, 0] * right.entries[0, 1] + left.entries[2, 1] * right.entries[1, 1] + left.entries[2, 2] * right.entries[2, 1],
        left.entries[2, 0] * right.entries[0, 2] + left.entries[2, 1] * right.entries[1, 2] + left.entries[2, 2] * right.entries[2, 2]
-
-
-
-
        );
 
    }
@@ -156,6 +156,7 @@ public class HMatrix2D : MonoBehaviour
         {
             for (int j = 0; j < left.Columns; j++)
             {
+                //compares left entires and right entires element by element 
                 if (left.entries[i, j] == right.entries[i, j])
                 {
                     return true;
@@ -173,6 +174,7 @@ public class HMatrix2D : MonoBehaviour
         {
             for (int j = 0; j < left.Columns; j++)
             {
+                //compares left entires and right entires element by element 
                 if (left.entries[i, j] != right.entries[i, j])
                 {
                     return true;
@@ -242,13 +244,14 @@ public class HMatrix2D : MonoBehaviour
          {
              for(int x = 0; x < Columns; x++)
              {
+                //compare the x values and y value
                  if(x == y)
                  {
-                     entries[x, y] = 1; // put a , for two dimensional array
-                 }
+                     entries[x, y] = 1; //if it is diagonal of the matrix set the matrix point into x and y to 1
+                }
                  else
                  {
-                    entries[x, y] = 0;
+                    entries[x, y] = 0; // else set to 0
                  }
              }
          }
@@ -263,20 +266,21 @@ public class HMatrix2D : MonoBehaviour
 
      public void setRotationMat(float rotDeg)
      {
-        setIdentity();
+        setIdentity();// call method of the setIdentity 
+        //calculate the radiant, and equals to rotation angle multiply by mathf deg3raad as it converts to degrees
         float rad = rotDeg * Mathf.Deg2Rad;
 
-
-        entries[0, 0] = Mathf.Cos(rad);
-        entries[0, 1] = -Mathf.Sin(rad);
-        entries[1, 0] = Mathf.Sin(rad);
-        entries[1, 1] = Mathf.Cos(rad);
+        
+        entries[0, 0] = Mathf.Cos(rad);//set matrix position and cosin to the angle of radiant
+        entries[0, 1] = -Mathf.Sin(rad); //set matrix position and negative sine to the angle of radiant
+        entries[1, 0] = Mathf.Sin(rad); //set matrix position and  sine to the angle of radiant
+        entries[1, 1] = Mathf.Cos(rad); //set matrix position and cosin to the angle of radiant
     }
 
-     public void setScalingMat(float scaleX, float scaleY)
+     /*public void setScalingMat(float scaleX, float scaleY)
      {
          // your code here
-     }
+     }*/
 
      public void Print()
      {

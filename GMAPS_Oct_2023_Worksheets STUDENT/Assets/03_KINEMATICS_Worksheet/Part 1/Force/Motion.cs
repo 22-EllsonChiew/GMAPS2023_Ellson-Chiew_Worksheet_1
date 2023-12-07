@@ -8,12 +8,12 @@ public class Motion : MonoBehaviour
 
     public void FixedUpdate()
     {
-        float dt = Time.deltaTime;
+        float dt = Time.deltaTime; //create dt variable and give the value of time that elapsed the last frame  
 
-        float dx = velocity.x * dt;
-        float dy = velocity.y * dt;
-        float dz = velocity.z * dt;
+        float dx = velocity.x * dt; //create dx variable and set it to x axis of the velocity multiply the dt of the time
+        float dy = velocity.y * dt; //create dy variable and set it to y axis of the velocity multiply the dt of the time
+        float dz = velocity.z * dt; //create dz variable and set it to z axis of the velocity multiply the dt of the time
 
-        transform.Translate(new Vector3(dx, dy, dz));
+        transform.Translate(new Vector3(dx, dy, dz)); //translate the transform of the gameobject that is dx, dy and dz 
     }
 }

@@ -19,42 +19,46 @@ public class TransformMesh : MonoBehaviour
     void Start()
     {
         meshManager = GetComponent<MeshManager>();
-        pos = new HVector2D(gameObject.transform.position.x, gameObject.transform.position.y);
+        pos = new HVector2D(gameObject.transform.position.x, gameObject.transform.position.y); //create pos variable and use HVector2D, and use x and y values to target gameobject position
 
-       Translate(1, 1);
-       Rotate(45);
+       Translate(1, 1); //translate the gameobject mesh to 1 , 1 coordinates
+       Rotate(45); // rotate the gameobject mesh to 45 degree, can change the value if the angle 
     }
 
 
     void Translate(float x, float y)
     {
+        //use transformMatrix that is used as HMatrix and use method setIdentity 
         transformmatrix.setIdentity();
-        transformmatrix.setTranslationMat(x, y);
+        transformmatrix.setTranslationMat(x, y); //set translation maxtrix to x and y values 
         transformmatrix.Print();
         Transform();
 
-        pos = transformmatrix * pos;
+        pos = transformmatrix * pos; //multiply the transfomMatrix with the pos that was used in void Start
 
 
     }
 
     void Rotate(float angle)
     {
+        // create instance for toOriginMatrix, fromOriginMatrix and rotateMatrix and initizlied it
          HMatrix2D toOriginMatrix = new HMatrix2D();
          HMatrix2D fromOriginMatrix = new HMatrix2D();
          HMatrix2D rotateMatrix = new HMatrix2D();
 
-         toOriginMatrix.setTranslationMat(-pos.x, -pos.y);
+        // use toOriginMatrix and then calles the method setTranslation matrix and set the value of negative x and y so it will translate to the coordinates 
+        toOriginMatrix.setTranslationMat(-pos.x, -pos.y);
 
-         fromOriginMatrix.setTranslationMat(pos.x, pos.y);
+        // use fromOriginMatrix and then calles the method setTranslation matrix and set the value of x and y so it will translate to the coordinates 
+        fromOriginMatrix.setTranslationMat(pos.x, pos.y);
 
-
+        //use rotateMatrix instance and then calls the rotation matrix method and set it with specific angle later when calling it
          rotateMatrix.setRotationMat(angle);
 
          transformmatrix.setIdentity();
-         transformmatrix = fromOriginMatrix * rotateMatrix * toOriginMatrix;
+         transformmatrix = fromOriginMatrix * rotateMatrix * toOriginMatrix; //multiply the matrices toOriginMatrix, fromOriginMatrix and rotateMatrix into single composite 
 
-         Transform();
+        Transform();
 
         /*float cosAngle = Mathf.Cos(angle * Mathf.Deg2Rad);
         float sinAngle = Mathf.Sin(angle * Mathf.Deg2Rad);
@@ -73,15 +77,17 @@ public class TransformMesh : MonoBehaviour
 
     private void Transform()
     {
-        vertices = meshManager.clonedMesh.vertices;
+        vertices = meshManager.clonedMesh.vertices; // bring the clonedmesh from meshmanager scriot and called it vertices variables
 
+        //start a for loop with the i variable and iterates vertices with the length
         for (int i = 0; i < vertices.Length; i++)
         {
+            //create new HVector2D which is vert, and set the x and y coordinates of the vertices
             HVector2D vert = new HVector2D(vertices[i].x, vertices[i].y);
             //Debug.Log(vert.x + " Before ");
-            vert = transformmatrix * vert;
+            vert = transformmatrix * vert; //calculaye the vert by multiplying transformMatrix and apply it to trasnformation vector to vert
 
-            
+            //update x and y coordinates
             vertices[i].x = vert.x;
             vertices[i].y = vert.y;
 

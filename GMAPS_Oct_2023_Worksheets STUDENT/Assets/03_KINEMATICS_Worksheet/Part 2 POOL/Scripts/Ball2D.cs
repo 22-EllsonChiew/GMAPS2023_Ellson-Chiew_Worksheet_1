@@ -24,14 +24,14 @@ public class Ball2D : MonoBehaviour
 
      public bool IsCollidingWith(float x, float y)
      {
-         float distance = Util.FindDistance(Position, new HVector2D(x, y));
+         float distance = Util.FindDistance(Position, new HVector2D(x, y)); // to find the distance called util script and called the method find distance of the position of x and y axis 
          return distance <= Radius;
      }
 
      public bool IsCollidingWith(Ball2D other)
      {
-        float distance = Util.FindDistance(Position, other.Position);
-         return distance <= Radius + other.Radius;
+        float distance = Util.FindDistance(Position, other.Position); //to find the distance called util script and called the method find distance with other ball position 
+        return distance <= Radius + other.Radius;
      }
 
      public void FixedUpdate()
@@ -41,12 +41,14 @@ public class Ball2D : MonoBehaviour
 
      private void UpdateBall2DPhysics(float deltaTime)
      {
-         float displacementX = Velocity.x * deltaTime;
-         float displacementY = Velocity.y * deltaTime;
+         float displacementX = Velocity.x * deltaTime; //calculate the displacement of x axis by velocity of x axis multiply the time which time that elapsed the last frame and it will determine how far an object will go
+        float displacementY = Velocity.y * deltaTime; //calculate the displacement of x axis by velocity of y axis multiply the time which time that elapsed the last frame and it will determine how far an object will go
 
-         Position.x += displacementX;
+        //update the position of x and y axis and calculate the displacement for both x and y axis
+        Position.x += displacementX; 
          Position.y += displacementY;
 
+        //update the object transform position to the new value that has been calulated by displacement x and y axis
          transform.position = new Vector2(Position.x, Position.y);
      }
 
